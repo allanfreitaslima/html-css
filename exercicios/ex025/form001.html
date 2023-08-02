@@ -12,7 +12,12 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi porro explicabo ad. A, id incidunt. Molestiae culpa perferendis velit repudiandae sapiente laudantium fugit iure eos explicabo odit, deleniti quis beatae.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit nihil ad reprehenderit corporis, adipisci enim at! Quos vero cumque neque totam sequi! Ab nam assumenda enim mollitia labore itaque.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum amet sit molestiae omnis ducimus deserunt magnam quisquam perspiciatis ab numquam, tempore inventore fugiat sint accusantium id, quae aliquam excepturi.</p>
+    <form action="cadastro.php" method="POST">
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
 </html>
