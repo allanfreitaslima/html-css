@@ -12,12 +12,19 @@
 </head>
 <body>
     <h1>Treinando no Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="POST">
     <fieldset>
         <legend>Dados Pessoais</legend>
         <p>
             <label for="inome">Nome Completo: </label>
             <input type="text" name="nome" id="inome" required minlength="5" maxlength="20">
+        </p>
+        <p>
+            <label for="inome">Sexo: </label>
+            <input type="radio" name="sexo" id="isxmas" value="M">
+            <label for="isxmas"> Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" name="isxfem" value="F">
+            <label for="isxfem"> Feminino</label>
         </p>
         <p>
             <label for="inas">Data de Nascimento: </label>
@@ -30,6 +37,13 @@
         <p>
             <label for="iemail">E-mail: </label>
             <input type="email" name="email" id="iemail" size="25" placeholder="Exemplo@gmail.com">
+        </p>
+        <p>
+            <label for="inome">Esportes Favoritos: </label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label> <br>
         </p>
     </fieldset>
     <p>
